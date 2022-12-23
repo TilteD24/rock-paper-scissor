@@ -75,7 +75,6 @@ const Paper = () => (
 const Won = () => (
   <h2
     style={{
-      marginTop: "100px",
       textAlign: "center",
       color: "whitesmoke",
     }}
@@ -87,7 +86,6 @@ const Won = () => (
 const Lost = () => (
   <h2
     style={{
-      marginTop: "100px",
       textAlign: "center",
       color: "whitesmoke",
     }}
@@ -99,7 +97,6 @@ const Lost = () => (
 const Tie = () => (
   <h2
     style={{
-      marginTop: "100px",
       textAlign: "center",
       color: "whitesmoke",
     }}
@@ -242,19 +239,23 @@ const Results = ({ showResults, setShowResults, score, changeScore }) => {
   const [houseResults, setHouseResults] = useState(false);
 
   return (
-    <>
+    <div
+      style={{
+        width: "700px",
+        margin: "0 auto",
+      }}
+    >
       <div
+        id="results"
         style={{
           display: "flex",
           justifyContent: "space-around",
-          marginLeft: "400px",
-          marginRight: "400px",
         }}
       >
         <div
           style={{
             width: "200px",
-            height: "200px",
+            height: "300px",
             textAlign: "center",
             color: "white",
             letterSpacing: "1px",
@@ -272,7 +273,7 @@ const Results = ({ showResults, setShowResults, score, changeScore }) => {
         <div
           style={{
             width: "200px",
-            height: "200px",
+            height: "300px",
             textAlign: "center",
             letterSpacing: "1px",
             color: "white",
@@ -319,7 +320,7 @@ const Results = ({ showResults, setShowResults, score, changeScore }) => {
           </h3>
         </button>
       </div>
-    </>
+    </div>
   );
 };
 
